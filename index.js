@@ -82,7 +82,7 @@ async function main() {
   try {
     const decimals = await tokenContract.decimals();
     const amountInWei = ethers.parseUnits(amountToSend.toString(), decimals);
-    const delayBetweenTransactions = 1000;
+    const delayBetweenTransactions = 5000;
 
     for (let i = 0; i < wallets.length; i++) {
       const wallet = wallets[i];
